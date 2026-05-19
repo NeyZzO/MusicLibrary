@@ -1,0 +1,21 @@
+{
+  "name": "MusicLibrary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:front": "cd UserInterface && pnpm run dev",
+    "dev:back": "dotnet watch run",
+    "dev": "concurrently \"pnpm run dev:front\" \"pnpm run dev:back\"",
+    "build:front": "cd UserInterface && pnpm run build",
+    "build:back": "dotnet publish -c Release",
+    "build": "pnpm run build:front && pnpm run build:back"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.18.1",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
