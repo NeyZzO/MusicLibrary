@@ -27,12 +27,10 @@ class Program {
         // Creating a new PhotinoWindow instance with the fluent API
         var window = new PhotinoWindow()
             .SetTitle(windowTitle)
-            .SetUseOsDefaultSize(false)
-            .SetSize(new Size(2048, 1024))
             // Resize to a percentage of the main monitor work area
             //.Resize(50, 50, "%")
             .SetUseOsDefaultSize(false)
-            .SetSize(new Size(800, 600))
+            .SetSize(new Size(1200, 675))
             // Center window in the middle of the screen
             .Center()
             // Users can resize windows by default.
